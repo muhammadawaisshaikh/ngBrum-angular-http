@@ -1,1 +1,16 @@
-<p>listing works!</p>
+
+<div class="listing">
+    <div class="card mt-3" *ngFor="let item of users">
+        <div class="card-body p-2">
+            <div class="d-flex justify-content-start">
+                <div class="avatar">
+                    <img src="{{item.avatar}}" alt="{{item.email}}">
+                </div>
+                <div class="content pt-3">
+                    <h5 class="mb-1">{{item.first_name}} {{item.last_name}}</h5>
+                    <p>{{item.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
