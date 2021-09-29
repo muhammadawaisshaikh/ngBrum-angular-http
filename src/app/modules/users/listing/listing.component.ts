@@ -20,11 +20,10 @@ export class ListingComponent implements OnInit {
   }
 
   getUserListing() {
-    this.usersService.getUsers(2).subscribe((res: any) => {
+    this.usersService.getUsers(1).subscribe((res: any) => {
       this.data = res;
       this.users = res.data;
       console.log(this.users);
-      
     });
   }
 

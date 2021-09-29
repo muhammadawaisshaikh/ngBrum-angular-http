@@ -19,4 +19,8 @@ export class UsersService {
 
     return this.http.get<any>(this.url, {params: params});
   }
+
+  addUser(data: any) {
+    return this.http.post<any>(this.url, data);
+  }
 }
